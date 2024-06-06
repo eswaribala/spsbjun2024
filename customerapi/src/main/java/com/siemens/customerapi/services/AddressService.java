@@ -10,7 +10,7 @@ public interface AddressService {
     Address addAddress(Address address, long accountNo);
     List<Address> fetchAllAddresses();
     List<Address> fetchAddressByAccountNo(long accountNo);
-    List<Address> fetchAddressByContactNo(long contactNo);
+
     Address updateAddress(AddressUpdateDTO addressUpdateDTO);
-    boolean deleteAddressByAccountNo(long accountNo);
+    boolean deleteAddressByAccountNo(long addressId);
 }
