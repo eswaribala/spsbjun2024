@@ -1,11 +1,17 @@
 package com.siemens.customerapi.models;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
-
-@Table(name="Customer")
+import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
 @Entity
+@Table(name="Customer")
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Inheritance(strategy = InheritanceType.JOINED)
+@SuperBuilder
 public class Customer {
 
     @Id
