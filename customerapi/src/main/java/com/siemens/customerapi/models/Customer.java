@@ -3,6 +3,7 @@ package com.siemens.customerapi.models;
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
+import jakarta.xml.bind.annotation.XmlRootElement;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,6 +15,7 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 @Inheritance(strategy = InheritanceType.JOINED)
 @SuperBuilder
+@XmlRootElement
 public class Customer {
 
     @Id

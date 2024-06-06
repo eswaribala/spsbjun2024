@@ -29,7 +29,7 @@ public class CustomerController {
 
     }
 
-    @GetMapping("/v1.0")
+    @GetMapping(path = "/v1.0",produces ={"application/xml","text/xml"})
     public List<Customer> getAllCustomers(){
         return this.customerService.fetchAllCustomers();
     }
