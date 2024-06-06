@@ -5,6 +5,7 @@ import com.siemens.customerapi.dtos.ResponseWrapper;
 import com.siemens.customerapi.models.Customer;
 import com.siemens.customerapi.services.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -29,7 +30,9 @@ public class CustomerController {
 
     }
 
-    @GetMapping(path = "/v1.0",produces ={"application/xml","text/xml"})
+    @GetMapping(path = "/v1.0",produces ={MediaType.APPLICATION_JSON_VALUE,
+    MediaType.APPLICATION_XML_VALUE
+    })
     public List<Customer> getAllCustomers(){
         return this.customerService.fetchAllCustomers();
     }
