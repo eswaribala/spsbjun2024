@@ -24,7 +24,7 @@
 }
 
 .formClass{
-    width: 15%;
+    width: 20%;
     background-color: lime;
     margin-left: 40%;
     margin-top:5%;
@@ -41,7 +41,7 @@
     background-color: lime;
 }
 
-input[type="submit"]{
+button{
     background-color: black;
     color:lime;
     font-size: large;
