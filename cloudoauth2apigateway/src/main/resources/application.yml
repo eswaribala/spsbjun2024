@@ -9,7 +9,7 @@ spring:
         - id: Customer-API
           uri: http://127.0.0.1:7074
           predicates:
-            - Path=/customers/v1.0
+            - Path=/customers/**
           filters:
             - RemoveRequestHeader=Cookie
   security:
@@ -24,14 +24,14 @@ spring:
         registration:
           keycloak-with-test-scope:
             provider: keycloak
-            client-id: spring-with-test-scope
-            client-secret: 1Rol8A23PP92SmFqjDGaZ5EJ1l6ZE59X
+            client-id: client1
+            client-secret: XCuQqr0zjZ6kbuAiK4gfk22eKF0XRfyu
             authorization-grant-type: authorization_code
             redirect-uri: "{baseUrl}/login/oauth2/code/keycloak"
           keycloak-without-test-scope:
             provider: keycloak
-            client-id: spring-without-test-scope
-            client-secret: JiAlNFAp7sV5YFX2ThZSvFRPclwoCqjB
+            client-id: client2
+            client-secret: YpBH5ZWEghjXQvwPfbO98pCZztE8HhAt
             authorization-grant-type: authorization_code
             redirect-uri: "{baseUrl}/login/oauth2/code/keycloak"
 
