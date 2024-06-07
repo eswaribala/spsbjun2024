@@ -22,16 +22,16 @@ spring:
             userinfo-uri: http://localhost:7070/auth/realms/master/protocol/openid-connect/userinfo
             user-name-attribute: preferred_username
         registration:
-          keycloak-with-test-scope:
+          keycloak-with-developer-scope:
             provider: keycloak
-            client-id: client1
-            client-secret: XCuQqr0zjZ6kbuAiK4gfk22eKF0XRfyu
+            client-id: client3
+            client-secret: Uw5bBjIQmQGSwApppZvVX99rVgwFNhRT
             authorization-grant-type: authorization_code
             redirect-uri: "{baseUrl}/login/oauth2/code/keycloak"
-          keycloak-without-test-scope:
+          keycloak-without-developer-scope:
             provider: keycloak
-            client-id: client2
-            client-secret: YpBH5ZWEghjXQvwPfbO98pCZztE8HhAt
+            client-id: client4
+            client-secret: Qpz2ZFGEiSBxwGcgDJ2VSsHm255Jby5A
             authorization-grant-type: authorization_code
             redirect-uri: "{baseUrl}/login/oauth2/code/keycloak"
 

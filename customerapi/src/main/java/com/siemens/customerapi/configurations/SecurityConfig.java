@@ -1,5 +1,5 @@
 package com.siemens.customerapi.configurations;
-
+/*
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
@@ -9,8 +9,10 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configurers.oauth2.server.resource.OAuth2ResourceServerConfigurer;
 
 @Configuration
+//spring boot 2.x
 //@EnableWebSecurity
-//@EnableGlobalMethodSecurity(prePostEnabled = true)
+// @EnableGlobalMethodSecurity(prePostEnabled = true)
+//spring boot 3.x
 @EnableMethodSecurity
 public class SecurityConfig  {
 
@@ -19,3 +21,4 @@ public class SecurityConfig  {
 				.oauth2ResourceServer(OAuth2ResourceServerConfigurer::jwt);
 	}
 }
+*/
