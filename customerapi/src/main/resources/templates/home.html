@@ -6,13 +6,18 @@
     <link type="text/css" href="styles/home.css" rel="stylesheet">
 </head>
 <body>
-  <header class="headerClass">
-      <figure class="figureClass">
-          <img src="images/logo.png" class="imgLogoClass">
-      </figure>
-      <h1> Global Banking </h1>
-  </header>
-  <section>
+<section>
+    <header class="headerClass">
+        <article>
+            <figure>
+                <img src="images/logo.png" class="imgLogoClass"/>
+            </figure>
+        </article>
+        <article class="titleClass">
+            <h1>Global Bank</h1>
+        </article>
+    </header>
+  <article>
 
   <form th:action="@{/save}" th:method="post" th:object="${customer}" class="formClass">
      <fieldset class="fieldSetClass">
@@ -32,6 +37,7 @@
       <button>submit</button>
      </fieldset>
   </form>
+  </article>
   </section>
 </body>
 </html>
