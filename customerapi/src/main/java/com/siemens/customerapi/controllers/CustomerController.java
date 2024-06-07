@@ -7,7 +7,7 @@ import com.siemens.customerapi.services.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-//import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -34,7 +34,7 @@ public class CustomerController {
     @GetMapping(path = "/v1.0",produces ={MediaType.APPLICATION_JSON_VALUE,
     MediaType.APPLICATION_XML_VALUE
     })
-    //@PreAuthorize("hasAuthority('SCOPE_TEST')")
+    @PreAuthorize("hasAuthority('SCOPE_TEST')")
     public List<Customer> getAllCustomers(){
         return this.customerService.fetchAllCustomers();
     }

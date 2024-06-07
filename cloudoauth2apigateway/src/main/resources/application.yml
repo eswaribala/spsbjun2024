@@ -9,7 +9,7 @@ spring:
         - id: Customer-API
           uri: http://127.0.0.1:7074
           predicates:
-            - Path=/customer/**
+            - Path=/customers/v1.0
           filters:
             - RemoveRequestHeader=Cookie
   security:

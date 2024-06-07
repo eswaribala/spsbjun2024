@@ -1,4 +1,4 @@
-package com.virtusa.cloudoauth2apigateway.configurations;
+package com.siemens.cloudoauth2apigateway.configurations;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

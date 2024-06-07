@@ -1,4 +1,4 @@
-package com.virtusa.cloudoauth2apigateway;
+package com.siemens.cloudoauth2apigateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

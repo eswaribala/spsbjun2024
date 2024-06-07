@@ -1,4 +1,4 @@
-package com.virtusa.cloudoauth2apigateway;
+package com.siemens.cloudoauth2apigateway;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
