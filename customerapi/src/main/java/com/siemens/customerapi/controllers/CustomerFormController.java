@@ -23,7 +23,7 @@ public class CustomerFormController {
         Customer customerObj=null;
         if(customer.getName().getFirstName()!=null){
             customerObj=this.customerService.addCustomer(customer);
-            model.addAttribute("customer",customerObj);
+            model.addAttribute("customerResponse",customerObj);
             return "showcustomer.html";
         }else{
             return "redirect:/home";

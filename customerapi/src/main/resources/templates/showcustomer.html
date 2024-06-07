@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -7,60 +7,55 @@
 <body>
 <h1>Customer Saved Successfully</h1>
 <table>
-    <th>
+    <thead>
+    <tr>
         <td>
           Account No
          </td>
-    </th>
-    <th>
+
+
     <td>
         First Name
     </td>
 
-    </th>
 
-    <th>
+
+
     <td>
         Last Name
     </td>
-    </th>
-    <th>
+
+
     <td>
         Email
     </td>
-    </th>
-    <th>
+
+
     <td>
         Contact No
     </td>
-    </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td th:text="${customerResponse.accountNo}">
 
+        </td>
+        <td th:text="${customerResponse.name.firstName}">
 
-    <tr>
-        <td>
-        <td th:text="${customer.accountNo}"></td>
+        </td>
+        <td th:text="${customerResponse.name.lastName}">
+
+        </td>
+        <td th:text="${customerResponse.email}">
+
+        </td>
+        <td th:text="${customerResponse.contactNo}">
+
         </td>
     </tr>
-    <tr>
-        <td>
-        <td th:text="${customer.firstName}"></td>
-        </td>
-    </tr>
-    <tr>
-        <td>
-        <td th:text="${customer.lastName}"></td>
-        </td>
-    </tr>
-    <tr>
-        <td>
-        <td th:text="${customer.email}"></td>
-        </td>
-    </tr>
-    <tr>
-        <td>
-        <td th:text="${customer.contactNo}"></td>
-        </td>
-    </tr>
+
+    </tbody>
 </table>
 
 </body>
