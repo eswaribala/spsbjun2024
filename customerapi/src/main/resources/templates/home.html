@@ -3,10 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link type="text/css" href="styles/home.css" rel="stylesheet">
 </head>
 <body>
-  <h1> Global Banking </h1>
-  <form th:action="@{/save}" th:method="post" th:object="${customer}">
+  <header class="headerClass">
+      <figure class="figureClass">
+          <img src="images/logo.png" class="imgLogoClass">
+      </figure>
+      <h1> Global Banking </h1>
+  </header>
+  <section>
+
+  <form th:action="@{/save}" th:method="post" th:object="${customer}" class="formClass">
+     <fieldset class="fieldSetClass">
+      <legend>Customer Form</legend>
       <label>First Name</label>
       <input type="text" th:field="*{name.firstName}"/>
       <label>Middle Name</label>
@@ -20,7 +30,8 @@
       <label>Password</label>
       <input type="text" th:field="*{password}"/>
       <button>submit</button>
-
+     </fieldset>
   </form>
+  </section>
 </body>
 </html>
