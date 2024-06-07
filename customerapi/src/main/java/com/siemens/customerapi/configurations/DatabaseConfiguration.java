@@ -25,7 +25,7 @@ public class DatabaseConfiguration {
     private DataSourceBuilder dataSourceBuilder;
 
 
-    @Bean
+    @Bean("smartdb")
 
     public DataSource getDataSource()
     {
