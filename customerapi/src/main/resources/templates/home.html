@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
   <h1> Global Banking </h1>
+  <form th:action="@{/save}" th:method="post" th:object="${customer}">
+      <label>First Name</label>
+      <input type="text" th:field="*{name.firstName}"/>
+      <label>Middle Name</label>
+      <input type="text" th:field="*{name.middleName}" />
+      <label>Last Name</label>
+      <input type="text" th:field="*{name.lastName}"/>
+      <label>Email</label>
+      <input type="text" th:field="*{email}"/>
+      <label>ContactNo</label>
+      <input type="number" th:field="*{contactNo}"/>
+      <label>Password</label>
+      <input type="text" th:field="*{password}"/>
+      <button>submit</button>
+
+  </form>
 </body>
 </html>
