@@ -5,6 +5,63 @@
     <title>Title</title>
 </head>
 <body>
-<h1>Testing.....</h1>
+<h1>Customer Saved Successfully</h1>
+<table>
+    <th>
+        <td>
+          Account No
+         </td>
+    </th>
+    <th>
+    <td>
+        First Name
+    </td>
+
+    </th>
+
+    <th>
+    <td>
+        Last Name
+    </td>
+    </th>
+    <th>
+    <td>
+        Email
+    </td>
+    </th>
+    <th>
+    <td>
+        Contact No
+    </td>
+    </th>
+
+
+    <tr>
+        <td>
+        <td th:text="${customer.accountNo}"></td>
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <td th:text="${customer.firstName}"></td>
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <td th:text="${customer.lastName}"></td>
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <td th:text="${customer.email}"></td>
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <td th:text="${customer.contactNo}"></td>
+        </td>
+    </tr>
+</table>
+
 </body>
 </html>
