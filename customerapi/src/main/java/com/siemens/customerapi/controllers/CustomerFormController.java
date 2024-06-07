@@ -31,5 +31,12 @@ public class CustomerFormController {
 
 
     }
+    @GetMapping("/showall")
+    public String showAllCustomers(Model model){
+       model.addAttribute("customers", this.customerService.fetchAllCustomers());
+       return "viewcustomers.html";
+
+    }
+
 
 }
