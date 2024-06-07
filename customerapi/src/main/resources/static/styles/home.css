@@ -2,7 +2,7 @@
     width: 90%;
     height:120px;
     border:2px solid red;
-    margin-left: 10%;
+    margin-left: 5%;
     background-color: black;
     color: orange;
 }
@@ -16,9 +16,13 @@
     width: 10%;
     float: left;
 }
+.imgLogoClassRight{
 
+    width: 10%;
+    float: right;
+}
 .titleClass{
-    width: 80%;
+    width: 60%;
     font-size: xx-large;
     margin-left: 30%;
 }
